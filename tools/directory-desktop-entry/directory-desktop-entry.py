@@ -57,3 +57,6 @@ Path(outfile).write_text(DESKTOP_ENTRY_TEMPLATE.format(
 
 # Mark the desktop entry as executable
 run(['chmod', '+x', outfile], check=True)
+
+# Inform the user that the entry was created successfully
+print('Created desktop entry for "{}" at {}.'.format(target, outfile))
